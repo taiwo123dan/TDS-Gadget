@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TDS Gadgets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #363738;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        logo {
+            float: left;
+        }
+        header {
+            background: linear-gradient(90deg, #27ae60 60%, #222 100%);
+            color: #fff;
+            padding: 40px 0 20px 0;
+            text-align: center;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #e0e0e0;
+        }
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #27ae60;
+            margin: 0 25px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            padding: 18px 0;
+            display: inline-block;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #222;
+            border-bottom: 2px solid #27ae60;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            color: #27ae60;
+            font-size: 2em;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .product-card {
+            background: hsl(152, 77%, 27%);
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(39,174,96,0.08), 0 1.5px 4px rgba(0,0,0,0.03);
+            width: 300px;
+            padding: 25px 20px 30px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .product-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(39,174,96,0.16), 0 3px 8px rgba(0,0,0,0.06);
+        }
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .product-card h3 {
+            margin: 10px 0 8px 0;
+            font-size: 1.25em;
+            color: #222;
+        }
+        .product-card p {
+            color: #181414;
+            font-size: 1em;
+            margin-bottom: 12px;
+        }
+        .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #edf8f1;
+            margin-bottom: 15px;
+        }
+        .buy-btn {
+            background: linear-gradient(90deg, #27ae60 60%, #222 100%);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 12px 30px;
+            font-size: 1em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+            box-shadow: 0 2px 8px rgba(39,174,96,0.10);
+        }
+        .buy-btn:hover {
+            background: linear-gradient(90deg, #222 60%, #27ae60 100%);
+            transform: scale(1.05);
+        }
+        #contact {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(39,174,96,0.08), 0 1.5px 4px rgba(0,0,0,0.03);
+            padding: 30px 20px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        #contact a {
+            color: #27ae60;
+            text-decoration: none;
+        }
+        #contact a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0;
+            margin-top: 50px;
+            font-size: 1em;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 900px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+            .product-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+      <button><img src="/image/image.2.svg"></button>
+    </div>
+        <p>Your trusted source for the latest Phones & Laptops</p>
+    </header>
+    <nav>
+        <a href="#phones">Phones</a>
+        <a href="#laptops">Laptops</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="phones">
+            <h2>Latest Andriod Phones</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="/image/1.jpg" alt="XIAOMI REDMI A5">
+                    <h3>XIAOMI REDMI A5</h3>
+                    <p>6.88 3GB RAM/64GB ROM -- BLACK</p>
+                    <div class="price">₦ 106,999</div>
+                    <button class="buy-btn" onclick="window.location.href='cart3.html'">Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/image/2.jpg" alt="XIAOMI Redmi 15C 6.9">
+                    <h3>XIAOMI Redmi 15c </h3>
+                    <p>4GBRAM/128GB ROM Android 15 -Midnight Black</p>
+                    <div class="price">₦ 135,999</div>
+                    <button class="buy-btn" onclick="window.location.href='cart3.html'">Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/image/3.jpg" alt="itel City 100 7.65mm">
+                    <h3>itel City 100</h3>
+                    <p>7.65mm, Slim Design 5200mah Android 128/4+8gb</p>
+                    <div class="price">₦ 123,000</div>
+                    <button class="buy-btn" onclick="window.location.href='cart3.html'">Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/image/4.jpg" alt="C Idea C10 6.79 inch phone">
+                    <h3>C Idea C10</h3>
+                    <p>6.79 inch, 3GB RAM, 64GB ROM, Dual Camera, Fingerprint</p>
+                    <div class="price">₦ 80,850</div>
+                    <button class="buy-btn" onclick="window.location.href='cart3.html'">Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/image/5.jpg" alt="redbeat D5 Smartphone 6.52inch IPS HD">
+                    <h3>redbeat D5 Smartphone</h3>
+                    <p>6.52inch IPS HD, 4GB RAM, 64GB ROM, Dual Camera</p>
+                    <div class="price">₦ 80,299</div>
+                    <button class="buy-btn" onclick="window.location.href='cart3.html'">Add To Cart</button>
+                    </div>
+                <div class="product-card">
+                    <img src="/image/6.jpg" alt="itel A100 6.75 inch phone">
+                    <h3>itel A100</h3>
+                    <p>6.75 inch, 4GB RAM, 128GB ROM, Dual Camera, Fingerprint</p>
+                    <div class="price">₦ 90,000</div>
+                    <button class="buy-btn" onclick="window.location.href='cart3.html'">Add To Cart</button>
+                    </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Dell XPS 13">
+                    <h3>Dell XPS 13</h3>
+                    <p>Intel i7, 16GB RAM, 1TB SSD</p>
+                    <div class="price">₦1,200,000</div>
+                    <button class="buy-btn">Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="HP Spectre x360">
+                    <h3>HP Spectre x360</h3>
+                    <p>Intel i7, 16GB RAM, 512GB SSD</p>
+                    <div class="price">₦1,050,000</div>
+                    <button class="buy-btn">Add To Cart</button>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For orders and inquiries, email us at <a href="https://www.tiktok.com/@taiwodee0?is_from_webapp=1&sender_device=pc">https://www.tiktok.com/@taiwodee0?</a> or call <a href="tel:+234705285571">+234 7065 2855 71</a>.</p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 TDS Gadgets. All rights reserved.
+    </footer> 
+</body>
+</html>
